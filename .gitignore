@@ -1,0 +1,67 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs
+logs
+*.log
+logs/
+*.log.*
+/yarn-debug.log*
+/yarn-error.log*
+/pnpm-debug.log*
+
+# Vue.js files
+dist/
+*.local
+*.env.local
+*.env.*.local
+.env
+.env.*
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.DS_Store
+Thumbs.db
+
+# System files
+.DS_Store
+*.tmp
+
+# Build output
+build/
+out/
+
+# Git
+.git/
+*.orig
+
+# Cache directories
+.cache/
+.temp/
+.vite/
+
+# Optional npm cache
+.npm/
+
+# Optional eslint cache
+.eslintcache
+
+# Stylelint cache
+.stylelintcache
+
+# Prettier cache
+.prettiercache
+
+# IDE settings and files
+/.sublime-project
+/.sublime-workspace
+
+# MacOS System Files
+__MACOSX/
