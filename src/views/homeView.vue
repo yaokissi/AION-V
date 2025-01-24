@@ -2,7 +2,7 @@
   <section class="page--content">
     <div class="left-side">
       <h2>Join us in reducing you carbon footprint, one charge at time.</h2>
-      <p class="p--link--a--footprint pt-6 p-6">Learn More <a href="#">&rarr;</a> </p>
+      <p class="p--link--a--footprint mt-6">Learn More <a href="#">&rarr;</a> </p>
       <div class="social-media">
         <a href="#"><img src="../assets/img/linkedin.png" alt="facebook" height="40"></a>
         <a href="#"><img src="../assets/img/threads.png" alt="threads" height="40"></a>
@@ -46,6 +46,9 @@
       </div>
     </div>
   </section>
+  <div class="bg-blue-500 text-white p-4 text-center">
+    Hello Tailwind CSS!
+  </div>
 </template>
 
 <script>
