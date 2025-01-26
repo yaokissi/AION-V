@@ -19,15 +19,15 @@
     <div class="right-side">
       <div class="header">
         <nav>
-          <img src="../assets/img/logoaionV.png" height="60">
           <ul>
+            <img src="../assets/img/logoaionV.png" height="60">
             <li>Shop</li>
             <li>About Us </li>
             <li>Car Feature</li>
             <li>Electric Car</li>
           </ul>
 
-          <button>Get in Touch</button>
+          <button>Get in Touch &rarr;</button>
         </nav>
         <div class="main">
           <h1>Drive the Future with Electric Cars</h1>
@@ -43,7 +43,7 @@
             <h3 class="">{{ stat.value }}</h3>
           </div>
         </div>
-        <div>
+        <div class="aionv--video">
           <img src="../assets/img/AionVImage.jpg" width="250" height="150">
         </div>
       </div>
@@ -146,6 +146,42 @@ h2 {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    img {
+      margin-left: 10px;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+      li {
+        margin-right: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 15px;
+        border-radius: 50px;
+      }
+    }
+    button {
+      padding: 20px;
+      background-color: black;
+      color: white;
+      width: 200px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+
+    }
+  }
+
 }
 a {
   text-decoration: none;
@@ -154,10 +190,10 @@ a {
 .stats--perf {
   display: flex;
   justify-content: end;
-  background-color: aqua;
+
 }
 .aionv--characteristic{
- background-color: crimson;
+
   width: 50%;
   display: flex;
   align-items: center;
