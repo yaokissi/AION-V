@@ -1,6 +1,7 @@
 <template>
   <section class="page--content">
     <div class="left-side">
+      <img src="../assets/img/img.png">
       <h2>Join us in reducing you carbon footprint, one charge at time.</h2>
       <p class="p--link--a--footprint">Learn More <a href="#">&rarr;</a> </p>
       <div class="social-media">
@@ -30,7 +31,7 @@
           <button>Get in Touch &rarr;</button>
         </nav>
         <div class="main">
-          <h1>Drive the Future with Electric Cars</h1>
+          <h1>Drive the Future <br> with Electric Cars</h1>
           <p>Discover the ultimate in efficiency and eco-friendliness. Our electric cars are designed to take you further with zero emissions.</p>
           <button>Learn More &rarr;</button>
         </div>
@@ -144,9 +145,22 @@ h2 {
 .header {
   background-image: url("../assets/img/headerCover.jpg");
   background-size: cover;
+
   background-repeat: no-repeat;
   height: 100vh;
-
+  .main{
+    margin-left: 30px;
+    p {
+      font-size: 20px;
+      margin-top: 10px;
+      color: white;
+    }
+  }
+  h1 {
+    font-size: 60px;
+    margin-top: 10px;
+    color: white;
+  }
   nav {
     display: flex;
     justify-content: space-between;
