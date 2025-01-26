@@ -2,13 +2,18 @@
   <section class="page--content">
     <div class="left-side">
       <h2>Join us in reducing you carbon footprint, one charge at time.</h2>
-      <p class="p--link--a--footprint mt-6">Learn More <a href="#">&rarr;</a> </p>
+      <p class="p--link--a--footprint">Learn More <a href="#">&rarr;</a> </p>
       <div class="social-media">
-        <a href="#"><img src="../assets/img/linkedin.png" alt="facebook" height="40"></a>
-        <a href="#"><img src="../assets/img/threads.png" alt="threads" height="40"></a>
-        <a href="#"><img src="../assets/img/twitter.png" alt=" X (ex twitter)" height="40"></a>
+        <a href="#"><img src="../assets/img/linkedin.png" alt="facebook" height="35"></a>
+        <a href="#"><img src="../assets/img/threads.png" alt="threads" height="35"></a>
+        <a href="#"><img src="../assets/img/twitter.png" alt=" X (ex twitter)" height="35"></a>
       </div>
-      <img src="../assets/img/aionV_calandre.jpg" width="100">
+      <div class="beling--show--learn--more">
+        <img src="../assets/img/aionV_calandre.jpg" width="150">
+        <h3>A Deep dive into the AION V.</h3>
+        <p>At the 2024 Beling Auto Show, GAC unveiled the second <br> generation AION V, a midsize SUV built on the AEP <br> platform. <b>Learn More</b>  </p>
+        <span class="down-arrow">&#8600;</span>
+      </div>
     </div>
 
     <div class="right-side">
@@ -30,25 +35,20 @@
           <button>Learn More &rarr;</button>
         </div>
       </div>
-      <div class="beling--show--learn--more">
-        <h3>A Deep dive into the AION V.</h3>
-        <p>At the 2024 Beling Auto Show, GAC unveiled the second generation AION V, a midsize SUV built on the AEP platform, <b>Learn More</b>  </p>
-        <p>&#8600;</p>
-      </div>
+
       <div class="stats--perf">
-        <div v-for="stat in stats" :key="stat.label" class="text-center">
-          <p class="">{{ stat.label }}</p>
-          <h3 class="">{{ stat.value }}</h3>
+        <div class="aionv--characteristic">
+          <div v-for="stat in stats" :key="stat.label" class="text-center">
+            <p class="">{{ stat.label }}</p>
+            <h3 class="">{{ stat.value }}</h3>
+          </div>
         </div>
-      </div>
-      <div>
-        <img src="../assets/img/AionVImage.jpg" width="250" height="150">
+        <div>
+          <img src="../assets/img/AionVImage.jpg" width="250" height="150">
+        </div>
       </div>
     </div>
   </section>
-  <div class="bg-blue-500 text-white p-4 text-center">
-    Hello Tailwind CSS!
-  </div>
 </template>
 
 <script>
@@ -59,7 +59,7 @@ export default {
   setup() {
 
     const stats = ref([
-      { value: '100,000 Mah', label: 'Battery Capacity' },
+      { value: '100.000 Mah', label: 'Battery Capacity' },
       { value: '375+ Mph', label: 'Top Speed' },
       { value: '< 2kWh', label: 'Per km Energy' }
     ])
@@ -70,7 +70,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 
 
 *{
@@ -78,6 +78,7 @@ export default {
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
 .page--content {
   display: flex;
   padding: 10px;
@@ -91,15 +92,55 @@ h2 {
 .right-side {
   width: 90%;
 }
-.p--link--a--footprint a {
-  width: 100px; /* Largeur totale */
-  padding: 3px;
-  height: 200px; /* Hauteur = taille du cercle */
-  border: 1px solid black;
-  border-left: none;
-  border-top-right-radius: 100px; /* Pas de rayon à droite */
-  border-bottom-right-radius: 100px; /* Pas de rayon à droite */
+.p--link--a--footprint {
+  margin-top: 30px;
+  a {
+    width: 100px;
+    padding: 2px;
+    height: 200px;
+    border: 1px solid black;
+    border-left: none;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+  }
 }
+.social-media {
+  margin-top: 490px;
+  margin-bottom: 30px;
+  a {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.beling--show--learn--more {
+  margin-top: 20px;
+  padding: 7px 0 0 5px;
+  width: 350px;
+  height: 200px;
+  background-color: #f4f4f4;
+  position: relative;
+  p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+
+  .down-arrow {
+    display: inline-block;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 7px;
+    text-align: center;
+    line-height: 1;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+
 .header {
   background-image: url("../assets/img/headerCover.jpg");
   background-size: cover;
@@ -109,5 +150,24 @@ h2 {
 a {
   text-decoration: none;
   color: #000;
+}
+.stats--perf {
+  display: flex;
+  justify-content: end;
+  background-color: aqua;
+}
+.aionv--characteristic{
+ background-color: crimson;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  p {
+    font-size: 12px;
+  }
+  h3 {
+    font-size: 35px;
+    margin-top: 5px;
+  }
 }
 </style>

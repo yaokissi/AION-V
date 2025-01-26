@@ -5,7 +5,6 @@ import homeView from "@/views/homeView.vue";
 <template>
   <header>
 
-
   </header>
 
   <main>
