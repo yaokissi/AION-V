@@ -10,6 +10,7 @@
         <a href="#"><img src="../assets/img/twitter.png" alt=" X (ex twitter)" height="35"></a>
       </div>
       <div class="beling--show--learn--more">
+
         <img src="../assets/img/aionV_calandre.jpg" width="150">
         <h3>A Deep dive into the AION V.</h3>
         <p>At the 2024 Beling Auto Show, GAC unveiled the second <br> generation AION V, a midsize SUV built on the AEP <br> platform. <b>Learn More</b>  </p>
@@ -32,7 +33,7 @@
         </nav>
         <div class="main">
           <h1>Drive the Future <br> with Electric Cars</h1>
-          <p>Discover the ultimate in efficiency and eco-friendliness. Our electric cars are designed to take you further with zero emissions.</p>
+          <p>Discover the ultimate in efficiency and eco- <br> friendliness. Our electric cars are designed to take <br> you further with zero emissions.</p>
           <button>Learn More &rarr;</button>
         </div>
       </div>
@@ -45,7 +46,7 @@
           </div>
         </div>
         <div class="aionv--video">
-          <img src="../assets/img/AionVImage.jpg" width="250" height="150">
+          <img src="../assets/img/AionVImage.jpg" width="250" height="200">
         </div>
       </div>
     </div>
@@ -83,7 +84,9 @@ export default {
 .page--content {
   display: flex;
   padding: 10px;
-}
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;}
 h2 {
   font-size: 1rem;
 }
@@ -106,7 +109,7 @@ h2 {
   }
 }
 .social-media {
-  margin-top: 490px;
+  margin-top: 400px;
   margin-bottom: 30px;
   a {
     display: block;
@@ -115,7 +118,7 @@ h2 {
 }
 
 .beling--show--learn--more {
-  margin-top: 20px;
+
   padding: 7px 0 0 5px;
   width: 350px;
   height: 200px;
@@ -145,9 +148,18 @@ h2 {
 .header {
   background-image: url("../assets/img/headerCover.jpg");
   background-size: cover;
-
   background-repeat: no-repeat;
   height: 100vh;
+
+  /*
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); // Couleur noire avec 50% de transparence
+    z-index: 1; // Place le calque au-dessus de l'image de fond
+  } */
   .main{
     margin-left: 30px;
     p {
@@ -155,10 +167,21 @@ h2 {
       margin-top: 10px;
       color: white;
     }
+    button {
+      padding: 20px;
+      margin-top: 50px;
+      background-color: #E65C01;
+      color: white;
+      width: 200px;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 15px;
+    }
   }
   h1 {
     font-size: 60px;
-    margin-top: 10px;
+    margin-top: 70px;
     color: white;
   }
   nav {
@@ -166,7 +189,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.5);
+   /* background-color: rgba(0, 0, 0, 0.5); */
     color: white;
     img {
       margin-left: 10px;
@@ -205,6 +228,10 @@ a {
   display: flex;
   justify-content: end;
 
+  .aionv--video img{
+
+    border-radius: 50px;
+  }
 }
 .aionv--characteristic{
 
