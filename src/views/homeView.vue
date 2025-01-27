@@ -118,12 +118,13 @@ h2 {
 }
 
 .beling--show--learn--more {
-
+  position: relative;
   padding: 7px 0 0 5px;
   width: 350px;
   height: 200px;
   background-color: #f4f4f4;
-  position: relative;
+  border-radius:
+      10px 75px 10px 10px / 10px 30px 10px 10px;
   p {
     margin-top: 10px;
     font-size: 12px;
